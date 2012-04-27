@@ -3,7 +3,15 @@
 Scripts for embedding (and optionally controlling) embedded video from the Bishop hosting platform
 
 ## Getting Started
-Install the module with: `npm install bishop.video.init`
+Install grunt with: `npm install -g grunt`
+
+Clone the bishop.video.init project locally: `git clone git@github.com:pk4media/bishop.video.init.git`
+
+Build the latest version of the embeded video initialization scripts:
+```
+cd bishop.video.init
+grunt
+```
 
 ```javascript
 var bishop_video_init = require('bishop.video.init');
