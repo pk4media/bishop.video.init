@@ -13,11 +13,6 @@ cd bishop.video.init
 grunt
 ```
 
-```javascript
-var bishop_video_init = require('bishop.video.init');
-bishop_video_init.awesome(); // "awesome"
-```
-
 ## Documentation
 _(Coming soon)_
 
@@ -31,5 +26,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2012 David Negstad  
-Licensed under the MIT license.
+Copyright (c) 2012 PK4 Media
