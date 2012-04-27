@@ -1,0 +1,30 @@
+{
+  "name": "bishop.video.init",
+  "description": "Scripts for embedding (and optionally controlling) embedded video from the Bishop hosting platform",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pk4media/bishop.video.init",
+  "author": {
+    "name": "David Negstad",
+    "email": "davidn@pk4media.com",
+    "url": "http://www.pk4media.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pk4media/bishop.video.init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pk4media/bishop.video.init/issues"
+  },
+  "main": "lib/bishop.video.init",
+  "engines": {
+    "node": "~0.6.15"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.3.9"
+  },
+  "keywords": []
+}
