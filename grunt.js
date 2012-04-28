@@ -18,31 +18,19 @@ module.exports = function(grunt) {
         src: ['lib/bishop.video.init.js', 'lib/bishop.video.player.js'],
         dest: 'min/normal/<%= pkg.name %>.js'
       },
-      scripting: {
-        src: ['lib/bishop.video.init.js', 'lib/bishop.video.player.scripting.js'],
-        dest: 'min/scripting/<%= pkg.name %>.js'
-      }
     },
     uglify: {
       mangle: { toplevel: true, except: ['Bishop', 'BishopPlayer'] }
     },
     concat: {
       normalRelease: {
-        src: ['lib/qwery.js', 'min/normal/<%= pkg.name %>.js'],
+        src: ['min/normal/<%= pkg.name %>.js'],
         dest: 'out/release/<%= pkg.name %>.<%= pkg.version %>.js'
       },
       normalDebug: {
-        src: ['lib/qwery.js', 'lib/bishop.video.init.js', 'lib/bishop.video.player.js'],
+        src: ['lib/bishop.video.init.js'],
         dest: 'out/debug/debug.<%= pkg.name %>.<%= pkg.version %>.js'
       },
-      scriptingRelease: {
-        src: ['lib/qwery.js', 'lib/postmessage.js', 'min/scripting/<%= pkg.name %>.js'],
-        dest: 'out/release/<%= pkg.name %>.scripting.<%= pkg.version %>.js'
-      },
-      scriptingDebug: {
-        src: ['lib/qwery.js', 'lib/postmessage.js', 'lib/bishop.video.init.js', 'lib.bishop.player.scripting.js'],
-        dest: 'out/debug/debug.<%= pkg.name %>.scripting.<%= pkg.version %>.js'
-      }
     },
     jshint: {
       options: {

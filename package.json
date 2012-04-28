@@ -1,7 +1,7 @@
 {
   "name": "bishop.video.init",
   "description": "Scripts for embedding (and optionally controlling) embedded video from the Bishop hosting platform",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/pk4media/bishop.video.init",
   "author": {
     "name": "David Negstad",
