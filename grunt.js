@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
     },
     uglify: {
-      mangle: { toplevel: true, except: ['Bishop', 'BishopPlayer'] }
+      mangle: { toplevel: true }
     },
     concat: {
       normalRelease: {
