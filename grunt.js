@@ -16,11 +16,17 @@ module.exports = function(grunt) {
     min: {
       release: {
         src: ['lib/bishop.video.init.js'],
-        dest: 'out/release/<%= pkg.name %>.js'
+        dest: 'min/release/<%= pkg.name %>.js'
       },
     },
     uglify: {
       mangle: { toplevel: true }
+    },
+    concat: {
+      release: {
+        src: ['lib/license.txt', 'min/release/<%= pkg.name %>.js'],
+        dest: 'out/release/<%= pkg.name %>.js'
+      }
     },
     jshint: {
       options: {
@@ -43,6 +49,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'min');
+  grunt.registerTask('default', 'min concat');
 
 };
